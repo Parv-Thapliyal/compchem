@@ -1,0 +1,146 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #303131;
+  color: #b4b5b8;
+  line-height: 1.7;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #004e92, #000428);
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.scroll-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #fff;
+  color: #004e92;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.scroll-btn:hover {
+  background: #e0e0e0;
+}
+
+/* Section Layout */
+.section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-size: large;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+  margin-bottom: 20px;
+}
+.ls{
+  font-size: small;
+  margin-left: 3px;
+  color:#d7d7d7;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section h2 {
+  text-align: center;
+  color: #004e92;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+.key-section {
+  background-color: #131313bb;
+  color: rgb(207, 207, 213);
+  padding:20px ;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 25px;
+}
+
+.key-section h2 {
+  text-align: center;
+  font-size:2rem ;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #6699ff;
+}
+
+
+.key-section h2 {
+  text-align: center;
+  font-size: large;
+  margin-bottom: 20px;
+  color: #6699ff;
+}
+
+/* Card Grid */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adds 10px space between the .card elements */
+}
+
+.card {
+  background: #131313bb;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+
+}
+
+.card h3 {
+  
+  color: #003366;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #d7d2d2;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* Footer */
+.footer {
+  background-color: #000428;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+  font-size: 0.9rem;
+}
+.card:last-child {
+  margin-bottom: 10px; 
+}
